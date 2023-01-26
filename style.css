@@ -43,6 +43,12 @@
     height: fit-content;
 }
 
+#Formacion {
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
 #Puesto {
     float: left;
     color: darkgrey;
@@ -100,7 +106,7 @@
     height: fit-content;
 }
 
-#Formacion {
+#Estudios {
     border-bottom: 2px solid black;
     text-align: center;
     margin-bottom: 25px;
