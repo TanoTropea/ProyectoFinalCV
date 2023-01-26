@@ -33,7 +33,9 @@
     border-radius: 6px;
     width: fit-content;
     height: fit-content;
+    font-size: small;
 }
+
 #botonExpM {
     color: #0099CC;
     background: transparent;
@@ -41,9 +43,10 @@
     border-radius: 6px;
     width: fit-content;
     height: fit-content;
+    font-size: small;
 }
 
-#Formacion {
+*#Formacion {
     border-bottom: 2px solid black;
     text-align: center;
     margin-bottom: 25px;
