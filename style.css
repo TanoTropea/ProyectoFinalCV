@@ -1,14 +1,25 @@
 /* Estilos para la foto de perfil */
-.Foto {
+/*.Foto {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin: 0 auto;
     border: 5px solid white;
-}
+} */
 
-.NomyApe {
+#Foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ #Foto img {
+    max-width: 100%;
+ }
+
+#NomyApe {
+    text-align: center;
     font-family: 'Roboto', sans-serif;
 }
 
