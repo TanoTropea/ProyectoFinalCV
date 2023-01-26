@@ -1,17 +1,19 @@
-/* Estilos para la foto de perfil */
-/*.Foto {
-    width: 200px;
-    height: 200px;
+.boton-inicio {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
     border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto;
-    border: 5px solid white;
-} */
+  }
 
 #Foto {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
  }
  
  #Foto img {
@@ -144,6 +146,7 @@
     bottom: 0%;
     left: 0%;
     width: 100%;
+    justify-items: center;
     background: rgb(38, 39, 60);
     opacity: 90%;
     color: white;
@@ -152,8 +155,5 @@
 a:link {color: white;}
 a:visited {color: white;}
 a:hover {color: gray;
-    font-size: 90%;
     background: rgb(61, 63, 88);
-    border: 2px solid black;
-    border-radius: 20%;
 }

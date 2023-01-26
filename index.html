@@ -10,10 +10,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/b52166f8ed.css" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
@@ -21,6 +18,9 @@
     <title>Proyecto Final CV</title>
   </head>
   <body>
+<div id="inicio">
+    <button class="boton-inicio" onclick="location.href='#inicio'"><i class="fa-solid fa-circle-chevron-up"></i></button>
+</div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -28,16 +28,17 @@
                     <div class="col-md-12">
                         <div id="NavBar">
                             <ul class="nav">
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="/index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
+                                <p>  </p>
+                                <li class="nav-item" style="display: flex; align-items: center;">
+                                    <i class="fa-solid fa-user"></i>
                                     <a class="nav-link" href="#INFO">Perfil</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item" style="display: flex; align-items: center;">
+                                    <i class="fa-solid fa-briefcase"></i>
                                     <a class="nav-link" href="#Formacion">Formación</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item" style="display: flex; align-items: center;">
+                                    <i class="fa-solid fa-school"></i>
                                     <a class="nav-link" href="#Estudios">Estudios</a>
                                 </li>
                             </ul>
@@ -47,23 +48,50 @@
       <div class="row">
         <div class="col-md-12">
           <div class="row">
-            <div class="col-md-3" id="Foto">
+            <div class="col-md-12 col-sm-12" id="Foto">
+                <div class="col-md-3 col-sm-6">
               <img
                 alt="Tropea Ricardo Profile Picture"
                 src="/CertificadoAnt.jpg"
                 width="135px" height="160px" 
                 class="rounded-circle"
               />
-              <h1 id="NomyApe">
-                TROPEA Ricardo
-            </h1>
+            </div>
+                <div class="col-md-9 col-sm-6">
+                    <h1 id="NomyApe">
+                    TROPEA Ricardo
+                    </h1>
+                </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-3 col-sm-12">
               <div class="row">
                 <div class="col-md-12" id="INFO">
-                  <p>
+                    <ul class="infor">
+                        <p id="Contact">Datos de Contacto</p>
+                        <li class="info-item" style="display: flex; align-items: center;">
+                            <i class="fa-solid fa-phone"></i>
+                            <p id="Telefono">  2964-485998</p>
+                        </li>
+                        <li class="info-item" style="display: flex; align-items: center;">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p id="EMail">  tanotropea@vk.com</p>
+                        </li>
+                        <li class="info-item" style="display: flex; align-items: center;">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p id="Direccion">  Kayen 956, ED 7 PB B. Río Grande,   Tierra del Fuego, Argentina.</p>
+                        </li>
+                        <li class="info-item" style="display: flex; align-items: center;">
+                            <p id="FechaNac">  20 de Enero de 1991. Río Grande, Tierra del Fuego, Argentina.</p>
+                        </li>
+                        <li class="info-item" style="display: flex; align-items: center;">
+                            <i class="fa-solid fa-id-card"></i>
+                            <p id="DNI">  35631191</p>
+                        </li>
+                    </ul>
+                  <!--
+                    <p>
                     <p id="Contact">Datos de Contacto</p>
                     <p id="Telefono">2964-485998</p>
                     <p id="Email">tanotropea@vk.com</p>
@@ -71,6 +99,7 @@
                     <p id="FechaNac">20 de Enero de 1991. Río Grande, Tierra del Fuego, Argentina.</p>
                     <p id="DNI">DNI: 35631191</p>
                   </p>
+                  -->
                 </div>
               </div>
               <div class="row">
@@ -232,6 +261,7 @@
     </div>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/b52166f8ed.js" crossorigin="anonymous"></script>
     <script src="/app.js"></script>
   </body>
 </html>
