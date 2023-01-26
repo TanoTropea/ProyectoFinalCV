@@ -24,6 +24,25 @@
 }
 
 /* Estilos para la experiencia laboral */
+
+#botonExpO {
+    align-items: center;
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    width: fit-content;
+    height: fit-content;
+}
+#botonExpM {
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    width: fit-content;
+    height: fit-content;
+}
+
 #Puesto {
     float: left;
     color: darkgrey;
@@ -63,6 +82,24 @@
 }
 
 /* Estilos para estudios */
+#botonEstO {
+    align-items: center;
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    width: fit-content;
+    height: fit-content;
+}
+#botonEstM {
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    width: fit-content;
+    height: fit-content;
+}
+
 #Formacion {
     border-bottom: 2px solid black;
     text-align: center;
