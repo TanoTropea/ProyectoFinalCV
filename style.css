@@ -142,6 +142,7 @@
 #NavBar {
     position: fixed;
     bottom: 0%;
+    left: 0%;
     width: 100%;
     background: rgb(38, 39, 60);
     opacity: 90%;
