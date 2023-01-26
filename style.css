@@ -8,6 +8,10 @@
     border: 5px solid white;
 }
 
+.NomyApe {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Estilos para la experiencia laboral */
 #Puesto {
     float: left;
