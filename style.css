@@ -1,3 +1,4 @@
+/* Estilo para botón flotante */
 .boton-inicio {
     position: fixed;
     bottom: 30px;
@@ -9,11 +10,17 @@
     border-radius: 50%;
   }
 
+/* Estilo para Foto y Nombre*/
+#Header {
+    margin: 0%;
+}
+
 #Foto {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 10px;
+    margin-top: 15px;
  }
  
  #Foto img {
@@ -21,12 +28,15 @@
  }
 
 #NomyApe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
 
 /* Estilos para la experiencia laboral */
-
 #botonExpO , #botonEstO {
     align-items: center;
     color: #0099CC;
@@ -66,6 +76,7 @@
     font-size: small;
     font-weight: normal;
     text-align: left;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.75);
 }
 
 /* Estilos para la info personal */
@@ -76,19 +87,37 @@
     background-color: rgb(38, 39, 60);
     font-weight: bold;
     text-align: center;
+    margin-top: 15px;
 }
 
-.Datos {
-    text-align: left;
-    font-weight: lighter;
-    color: rgb(38, 39, 60);
+.infor {
+    padding: 0px 15px 0px 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: baseline;
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.75);
+    border-width: 100%;
+}
+
+.fa-solid {
+    margin-right: 10px
+}
+
+#Telefono,
+#EMail,
+#Direccion,
+#FechaNac,
+#DNI {
+    width: auto;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
 }
 
 /* Estilos para conocimientos */
-.col-3 {
-    background-color: rgb(237, 241, 247);
-}
-
 #lis {
     font-size: large;
 }
@@ -100,28 +129,6 @@
 #nivel {
     text-align: left;
     font-weight: bold;
-}
-
-/* Más estilos para la experiencia laboral */
-.containerA {
-    display: flex;
-    flex-direction: row;
-    border-top: 1px solid rgba(220, 220, 220, 0.75);
-    margin-bottom: 25px;
-}
-
-.div1 {
-    float: left;
-    width: 50%;
-}
-
-.div2 {
-    float: right;
-    width: 50%;
-}
-
-.div4 {
-    border-bottom: 1px solid rgba(220, 220, 220, 0.75);
 }
 
 /* Estilo para Barra de Navegación */
