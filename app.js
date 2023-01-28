@@ -22,3 +22,5 @@ botonEstOjs.addEventListener("click", function () {
         botonEstOjs.innerHTML = "<i class='fa-regular fa-circle-down'></i>";
     }
 });
+
+/*Añadir la misma funcionalidad de Ocultar/Mostrar en INFO y Conocimientos.*/
