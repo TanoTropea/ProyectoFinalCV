@@ -51,6 +51,7 @@
 *#Formacion , #Estudios {
     border-bottom: 2px solid black;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 25px;
 }
 
@@ -87,6 +88,7 @@
     background-color: rgb(38, 39, 60);
     font-weight: bold;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     margin-top: 15px;
 }
 
