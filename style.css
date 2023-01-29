@@ -2,12 +2,17 @@
 .boton-inicio {
     position: fixed;
     bottom: 30px;
-    right: 20px;
+    right: 10px;
     z-index: 99;
     border: none;
     outline: none;
     cursor: pointer;
     border-radius: 50%;
+  }
+
+  button.boton-inicio {
+    width: 30px;
+    height: 30px;
   }
 
 /* Estilo para Foto y Nombre*/
