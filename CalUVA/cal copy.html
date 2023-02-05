@@ -46,6 +46,15 @@
     </div>
     
     <script>
+      // Ventana de Error para dispositivos móviles
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        var errorMessage = document.createElement("div");
+        errorMessage.innerHTML = "Este sitio no funciona en dispositivos móviles. Lo sentimos";
+        errorMessage.setAttribute("id", "errorMessage");
+        document.body.appendChild(errorMessage);
+      }
+
+      // Código funcionalidades Calculadora UVA
         const currentDate = new Date();
         const formattedDate = currentDate.toISOString().substr(0, 10);
 
