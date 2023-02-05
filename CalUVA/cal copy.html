@@ -66,7 +66,8 @@
             "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDcxMTI1NDQsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJ0YW5vLnRyb3BlYS5yZ0BnbWFpbC5jb20ifQ.OUZSUdx_po0U0EWfqeASoY1OBIBan8gEk7CdyF59IaP3y1nJ_1yb2k8DhpBATIgV_pqJQ86T-nkeZgf3yFcp2A",
           },
           xhrFields: {
-            withCredentials: true
+            withCredentials: true,
+            crossDomain: true,
           },
           success: function(data) {
             console.log(data);
@@ -97,7 +98,8 @@
           data: { d: userDateInput.value },
           headers: a,
           xhrFields: {
-            withCredentials: true
+            withCredentials: true,
+            crossDomain: true,
           },
           success: function(data) {
             console.log(data);
