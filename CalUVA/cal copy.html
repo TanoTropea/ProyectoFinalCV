@@ -97,10 +97,11 @@
           type: 'GET',
           data: { d: userDateInput.value },
           headers: a,
-          xhrFields: {
-            withCredentials: true,
-            crossDomain: true,
+          timeout:3000,
+          xhrFields: { 
+            withCredentials: true
           },
+          crossDomain: true,
           success: function(data) {
             console.log(data);
             data.forEach((info) => {
