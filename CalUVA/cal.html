@@ -49,7 +49,7 @@
      // Ventana de Error para dispositivos móviles
       if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         var errorMessage = document.createElement("div");
-        errorMessage.innerHTML = "<div class='warningTriangle'>&#9888;</div><div class='errorMessageText'>Lo sentimos<br>Debido a limitaciónes<br>en la API del BCRA<br>este sitio no funciona<br>en dispositivos móviles.</div>";
+        errorMessage.innerHTML = "<div class='warningTriangle'>&#9888;</div><div class='errorMessageText'>Lo sentimos.<br><br>Debido a limitaciónes<br>en la API del BCRA<br>este sitio no funciona<br>en dispositivos móviles.</div>";
         errorMessage.setAttribute("id", "errorMessage");
         document.body.appendChild(errorMessage);
 
