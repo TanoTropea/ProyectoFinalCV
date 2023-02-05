@@ -87,16 +87,13 @@
 
       fetchDataTodayButton.addEventListener("click", function() {
         const F = { d: datetodayInput.value }
-        let H = new headers()
-        H.set({
-            Authorization:
-            "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDcxMTI1NDQsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJ0YW5vLnRyb3BlYS5yZ0BnbWFpbC5jb20ifQ.OUZSUdx_po0U0EWfqeASoY1OBIBan8gEk7CdyF59IaP3y1nJ_1yb2k8DhpBATIgV_pqJQ86T-nkeZgf3yFcp2A",
-          })
+        const H = new Headers()
+        H.set('Authorization:', 'Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDcxMTI1NDQsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJ0YW5vLnRyb3BlYS5yZ0BnbWFpbC5jb20ifQ.OUZSUdx_po0U0EWfqeASoY1OBIBan8gEk7CdyF59IaP3y1nJ_1yb2k8DhpBATIgV_pqJQ86T-nkeZgf3yFcp2A')
         $.ajax({
           url: 'https://api.estadisticasbcra.com/uva',
           type: 'GET',
           data: { F },
-          headers: { H },
+          headers: H,
           xhrFields: {
             withCredentials: true
           },
