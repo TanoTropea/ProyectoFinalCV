@@ -56,8 +56,24 @@
         document.body.style.overflow = "hidden";
         document.body.style.height = "100vh";
       }
+// Consulta REQBIN.COM
+var url = "https://api.estadisticasbcra.com/uva";
 
+var xhr = new XMLHttpRequest();
+xhr.open("POST", url);
 
+xhr.setRequestHeader("Authorization", "Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDcxMTI1NDQsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJ0YW5vLnRyb3BlYS5yZ0BnbWFpbC5jb20ifQ.OUZSUdx_po0U0EWfqeASoY1OBIBan8gEk7CdyF59IaP3y1nJ_1yb2k8DhpBATIgV_pqJQ86T-nkeZgf3yFcp2A");
+xhr.setRequestHeader("Content-Type", "application/json");
+
+xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4) {
+      console.log(xhr.status);
+      console.log(xhr.responseText);
+   }};
+
+var data = '[{"d":"2016-03-31","v":"value"}]';
+
+xhr.send(data);
 
 
       // Código funcionalidades Calculadora UVA
