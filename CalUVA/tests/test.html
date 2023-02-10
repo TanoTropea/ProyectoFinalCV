@@ -8,11 +8,28 @@
     <!-- <script src="/CalUVA/cal.js"></script> -->
     <link rel="shortcut icon" href="/CalUVA/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/CalUVA/cal.css">
+    <link rel="stylesheet" href="modal.css">
     <title>Calculadora de Prestamos UVA con ChatGPT</title>
   </head>
   <body>
     <h1>Calculadora de Préstamos en UVA</h1>
-    <button id="CORS">Solicita acceso temporal al servidor CORS</button>
+    <div>
+      <button id="CORS">Accede al Servidor CORS</button>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <iframe id="iframe" src=""></iframe>
+        </div>
+      </div>
+      <!-- MODAL
+        <button id="openModalButton">Accede al Servidor CORS</button>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <iframe src="https://cors-anywhere.herokuapp.com/corsdemo"></iframe>
+        </div>
+      </div>-->
+    </div>
     <div id="DataBank">
       <h3>Consulta UVA por fecha específica</h3>
       <div id="app">
@@ -160,5 +177,6 @@
       Total.innerHTML = `<input type="text" value=${total} disabled>`;
       });
     </script>
+    <script src="modal.js"></script>
   </body>
 </html>
